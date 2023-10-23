@@ -19,14 +19,25 @@
 
 ## 포트폴리오 작품
 (작품들을 나열하고 각 작품에 대한 간략한 설명과 링크 제공)
-- 삼성전자 클론코딩 http://testyong.dothome.co.kr/pf1/main.html
-- 
-## 스크린샷 또는 데모(포트폴리오 웹사이트의 스크린샷을 추가)
-![pf1](https://github.com/pageservice/personal/assets/71798491/040b7316-5c4c-4a09-b7e8-6c54d60ec832)
-![pf2](https://github.com/pageservice/personal/assets/71798491/1a7c723b-1e1b-4cb6-9f45-6b17b89482e9)
+- 삼성전자  https://parkmiye.github.io/samsungRE/
+- 한국알콜산업 https://parkmiye.github.io/kai/
+- 공차 https://parkmiye.github.io/gongcha/
+- CGV https://parkmiye.github.io/cgv/
+- ARTBOX
+- 제이쿼리 https://parkmiye.github.io/jquery/
 
+## 스크린샷 또는 데모(포트폴리오 웹사이트의 스크린샷을 추가)
+
+![cap1](https://github.com/miye11/webportfolio/assets/142760561/eb85b207-43b0-414b-b37a-25153cbfd7a7)
+![cap2](https://github.com/miye11/webportfolio/assets/142760561/cb62b43d-3687-41c5-be60-01a4b3c1753d)
+
+
+![cap3](https://github.com/miye11/webportfolio/assets/142760561/8e80e5fd-0c70-47de-9ccd-11f494eed79e)
+![cap4](https://github.com/miye11/webportfolio/assets/142760561/9a652db6-ff6a-4169-8c4e-73196327ae44)
+
+![cap6](https://github.com/miye11/webportfolio/assets/142760561/cde6535a-b801-4cc8-ab56-67903e9ea479)
 
 
 
 ## 작성자 정보
-(이메일 주소나 연락처 정보를 추가)
+이메일 - mysg0609@naver.com
