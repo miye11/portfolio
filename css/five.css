@@ -1,0 +1,94 @@
+footer {
+}
+#five{ 
+  width: 100%;
+  height: 900px;
+  position: relative;
+}
+#five .wrap { 
+  width: 900px;
+  height: 800px;
+  margin-left: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} 
+#five .wrap p {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 200px;
+  background-image: url(../img/title1.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#five .wrap h3 {
+  font-size: 30px;
+}
+#five .wrap .mail {
+  flex-direction: column;
+  gap: 30px;
+}
+#five .wrap .mail li {
+
+}
+#five .wrap .mail li:nth-child(1){
+  font-size: 77px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+#five .wrap .mail li:nth-child(2){
+  position: relative;
+  margin: 30px 0;
+}
+#five .wrap .mail li:nth-child(3){
+  line-height: 3;
+  font-size: 16px;
+  font-weight: bold;
+}
+#five .wrap .mail li a {
+
+}
+#five .wrap .mail li:nth-child(2) a{
+  border-bottom : 1px solid #e9e9e9;
+  padding: 10px 55px 10px 20px;
+  background-color: white;
+  border-radius: 15px;
+}
+#five .wrap .mail li:nth-child(2) a:hover{
+  border: 1px solid black;
+  border-radius : 15px;
+}
+#five .wrap .mail li:nth-child(2) a::after{
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  background-image: url(../img/mail.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: -4px;
+}
+#five .wrap2 {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px;
+}
+#five .wrap2 p {
+  color: #999;
+} 
+
+
+
+
+
+
+
+
+
+

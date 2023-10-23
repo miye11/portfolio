@@ -1,0 +1,105 @@
+/* div.wrap */
+#one {
+  width: 100%;
+  margin-top: 50px;
+}
+#one .wrap {
+  height: 900px;
+  display: flex;
+  justify-content: space-around;
+} 
+#one .wrap h2 {
+  font-size: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+#one .wrap h2::before{
+  content: "";
+  display: inline-block;
+  background-image: url(../img/menuwave.png);
+  width: 200px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 50px;
+}
+/* .about */
+#one .intro{
+  width: 800px; 
+}
+#one .intro article {
+  display: flex;
+  align-items: center;
+}
+#one .intro article .photobox {
+  display: block;
+  width: 400px;
+  height: 500px;
+  border-radius: 50px;
+  background-color: #78b5e3;
+}
+#one .intro p {
+  line-height: 2;
+  font-size: 20px;
+  text-align: center;
+  width: 400px;
+  margin-top: 50px;
+}
+#one .intro ul {
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+  line-height: 3;
+  margin-left: 80px;
+}
+#one .intro ul li {
+  
+}
+/* .about */
+#one .about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  padding-bottom: 150px;
+}
+#one .about article{
+  width: 600px;
+  height: 300px;
+}
+#one .about .edu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+#one .about .edu ul{
+  line-height: 3;
+}
+#one .about .edu ul li{
+  
+}
+#one .about .edu ul li:nth-child(1){
+  font-size: 30px;
+}
+#one .about .edu ul li span{
+  color: #757575;
+  font-weight: bold;
+}
+#one .about .skill{
+  display: flex;
+  flex-direction: column;
+}
+#one .about .skill h3{
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+#one .about .skill figure{
+  display: flex;
+  margin-bottom: 30px;
+}
+#one .about .skill figcaption{
+  width: 200px;
+}

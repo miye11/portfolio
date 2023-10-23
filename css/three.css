@@ -1,0 +1,66 @@
+#three{
+  width: 100%;
+  height: 900px;
+  margin-bottom: 150px;
+  background-image: url(../img/three.png);
+  background-repeat: no-repeat;
+  background-position: center;
+} 
+#three .back{ 
+  background-color: #aaceed2e;
+  width: 100%;
+  height: 397px;
+  padding-top: 50px;
+} 
+#three .wrap{
+    
+}
+#three .wrap nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#three .wrap nav h2{
+  font-size: 70px;
+  margin: 50px;
+}
+#three .wrap nav ul{
+  display: flex;
+  gap: 60px;
+  margin-top: 50px;
+}
+#three .wrap nav li{
+  
+}
+#three .copy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  gap: 120px;
+}
+#three .copy ul{
+  
+} 
+#three .copy ul li{
+  text-align: center;
+  line-height: 3;
+}
+#three .copy ul li:nth-child(1){
+  font-size: 30px;
+}
+#three .copy .site{
+  display: block;
+  width: 500px;
+  height: 300px;
+  border: 1px solid;
+  border-radius: 80px;
+  background-image: url(../img/samsung.jpg);
+  background-position: center;
+  background-size: 130% 110%;
+  transition: all 0.5s;
+}
+#three .copy .site:hover{
+   background-size: 140% 120%;
+}

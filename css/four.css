@@ -1,0 +1,33 @@
+#four{
+  width: 100%;
+}
+#four .wrap{
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#four .wrap h2{
+  font-size: 70px;
+  margin: 50px;
+}
+#four .wrap2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1600px;
+  height: 500px;
+}
+#four .left{
+  width: 800px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#four .right{
+  display: flex;
+  align-items: center;
+  width: 800px;
+  height: 500px;
+}
