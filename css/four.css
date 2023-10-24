@@ -1,33 +1,103 @@
 #four{
   width: 100%;
-}
+  position: relative;
+} 
+#four .back{
+  width: 800px;
+  height: 1000px;
+  /*! background-color: #efe5f2; */
+  position: absolute;
+}  
 #four .wrap{
-  height: 900px;
+  height: 1000px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-#four .wrap h2{
-  font-size: 70px;
-  margin: 50px;
+  align-items: center; 
 }
 #four .wrap2{
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 1600px;
-  height: 500px;
+  height: 900px;
+  position: relative;
+  margin-left: 50px;
 }
 #four .left{
-  width: 800px;
-  height: 500px;
+  width: 600px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  margin-top: 150px;
+}
+#four .left a{
+  border: 2px solid #e7dae8;
+  text-align: center;
+  border-radius: 20px;
+  width: 100px;
+  margin-bottom: 50px;
+  transition: all 0.2s;
+  padding: 10px;
+  color: #e7dae8;
+}
+#four .left a:hover{
+  border: 1px solid #656565;
+  color: #656565;
+}
+#four .left h3{
+  font-size: 70px;
+  color: #af84b2;
+  font-weight: bold;
+  font-family: 'OKDDUNG';
+  letter-spacing: 5px;
+}
+#four .left p{
+  margin-bottom: 250px;
+  line-height: 2.3;
+  margin-top: 100px;
+  color: #656565;
+  font-size: 17px;
 }
 #four .right{
   display: flex;
-  align-items: center;
-  width: 800px;
+  justify-content: space-around;
+  width: 900px;
+  /*! margin-left: 150px; */
+}
+#four .right article{ 
+  width: 400px;
+  text-align: center;
+}
+#four .right article a{ 
+  display: block;
+  width: 400px; 
   height: 500px;
+  border-radius: 20px;
+  text-align: center;
+  background-size: 100% 100%;
+  background-position: center;
+  transition: all 0.5s;
+}
+#four .right article a:hover{
+  background-size: 120% 120%;
+}
+#four .right article h4{
+  font-size: 25px;
+  margin-top: 40px;
+}
+#four .right article p{
+  line-height: 2;
+  margin-top: 20px;
+}
+#four .right .in{
+
+}
+#four .right .in a{
+ background-image: url(../img/in.png);
+}
+#four .right .go{
+  
+}
+#four .right .go a{
+   background-image: url(../img/go.png);
 }

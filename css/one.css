@@ -2,17 +2,20 @@
 #one {
   width: 100%;
   margin-top: 50px;
-}
+} 
 #one .wrap {
-  height: 900px;
+  height: 1000px;
   display: flex;
   justify-content: space-around;
-} 
+}   
 #one .wrap h2 {
   font-size: 50px;
-  margin-bottom: 50px;
   display: flex;
   align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'OKDDUNG';
+  letter-spacing: 5px;
 }
 #one .wrap h2::before{
   content: "";
@@ -26,7 +29,7 @@
 }
 /* .about */
 #one .intro{
-  width: 800px; 
+  width: 1000px; 
 }
 #one .intro article {
   display: flex;
@@ -41,39 +44,57 @@
 }
 #one .intro p {
   line-height: 2;
-  font-size: 20px;
-  text-align: center;
+  font-size: 15px;
   width: 400px;
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+#one .intro p span{
+  font-weight: bold;
+  margin-right: 5px;
 }
 #one .intro ul {
   display: flex;
-  font-size: 20px;
+  font-size: 15px;
   flex-direction: column;
-  line-height: 3;
-  margin-left: 80px;
+  line-height: 2.5;
+  margin-left: 50px;
 }
 #one .intro ul li {
-  
+   
+}
+#one .intro ul li:nth-child(1){
+  border: 1px solid  #e9e9e9;
+  text-align: center;
+  border-radius: 20px;
+  width: 130px;
+  margin-bottom: 30px;
+  transition: all 0.2s;
+}
+#one .intro ul li:nth-child(1):hover{
+  border: 1px solid black;
+}
+#one .intro ul li span{
+  font-weight: bold;
 }
 /* .about */
 #one .about{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 700px;
+  align-items: end;
+  width: 500px;
   padding-bottom: 150px;
 }
 #one .about article{
   width: 600px;
   height: 300px;
-}
-#one .about .edu{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+}
+#one .about .edu{
+  margin-bottom: 70px;
 }
 #one .about .edu ul{
   line-height: 3;
@@ -89,7 +110,6 @@
   font-weight: bold;
 }
 #one .about .skill{
-  display: flex;
   flex-direction: column;
 }
 #one .about .skill h3{

@@ -11,8 +11,8 @@
   width: 100%;
   height: 397px;
   padding-top: 50px;
-} 
-#three .wrap{
+}  
+#three .wrap{ 
     
 }
 #three .wrap nav{
@@ -22,45 +22,113 @@
 }
 #three .wrap nav h2{
   font-size: 70px;
-  margin: 50px;
+  margin: 20px;
+  font-family: 'OKDDUNG';
+  letter-spacing: 5px;
+  color: #8897b3;
 }
 #three .wrap nav ul{
   display: flex;
-  gap: 60px;
+  gap: 40px;
   margin-top: 50px;
+  justify-content: center;
+}
+.slick-dots li button{
+  font-size: inherit;
+  color: black;
+  width: auto;
+}
+.slick-dots li button::before{
+  display: none;
 }
 #three .wrap nav li{
-  
+  width: auto;
+  font-size: 15px;
 }
-#three .copy{
+#three .wrap nav li button{
+  transition: all 0.5s;
+  width: 100%;
+}
+#three .wrap nav li.slick-active button{
+  color:#383e97;
+  transform: scale(1.2);
+  font-size: 18px;
+  border-bottom: 1px solid;
+  padding-bottom: 20px;
+}
+#three .wrap2 .copy{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 500px;
-  gap: 120px;
+  gap: 150px;
+  margin-top: 50px;
 }
-#three .copy ul{
+#three .wrap2 .copy ul{
   
 } 
-#three .copy ul li{
+#three .wrap2 .copy ul li{
   text-align: center;
   line-height: 3;
+  text-align: start;
 }
-#three .copy ul li:nth-child(1){
-  font-size: 30px;
+#three .wrap2 .copy ul li:nth-child(1){
+  font-size: 35px;
+  text-align: center;
+  transition: all 1s;
+  width: 300px;
 }
-#three .copy .site{
+#three .wrap2 .copy ul li:nth-child(1):hover{
+  color: #383e97;
+}
+#three .wrap2 .copy ul li:nth-child(2){
+  
+}
+#three .wrap2 .copy ul li span{
+  
+  color: #757575;
+  font-weight: bold;
+}
+#three .wrap2 .copy a{
   display: block;
   width: 500px;
   height: 300px;
   border: 1px solid;
   border-radius: 80px;
-  background-image: url(../img/samsung.jpg);
   background-position: center;
   background-size: 130% 110%;
   transition: all 0.5s;
 }
-#three .copy .site:hover{
+#three .wrap2 .copy a:hover{
    background-size: 140% 120%;
+}
+#three .wrap2 .copy .site1{
+ background-image: url(../img/samsung.png);
+}
+#three .wrap2 .copy .site2{
+ background-image: url(../img/kai.png);
+}
+#three .wrap2 .copy .site3{
+ background-image: url(../img/gongcha.png);
+}
+#three .wrap2 .copy .site4{
+ background-image: url(../img/cgv.png);
+}
+#three .wrap2 .copy .site5{
+ background-image: url(../img/artbox.png);
+}
+#three .wrap2 .copy .site6{
+ background-image: url(../img/jquary.png);
+}
+#three .slick-prev{
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  transform: rotate(225deg);
+  z-index: 1;
+}
+#three .slick-next{
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  transform: rotate(45deg);
 }

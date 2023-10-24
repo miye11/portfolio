@@ -11,39 +11,125 @@
     <link rel="stylesheet" href="css/title.css">
     <link rel="stylesheet" href="css/one.css">
     <link rel="stylesheet" href="css/two.css">
-    <link rel="stylesheet" href="css/three.css">
     <link rel="stylesheet" href="css/four.css">
     <link rel="stylesheet" href="css/five.css">
+    <link rel="stylesheet" href="css/end.css">
+
+<!-- 자바 -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/javascript"></script>
+
+<!-- 슬릭 -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.threeslide').slick({
+                dots: true
+            });
+            $('.slick-dots').appendTo('#three nav');
+            $('#three nav .slick-dots').css("position","static");
+            var menu =['SAMSUNG','KAI','GONGCHA','CGV','ARTBOX','JQUARY'];
+            var i=0;
+            $(".slick-dots li").each(function(){
+                $(this).children().text(menu[i]);
+                i++;
+            });
+        });
+    </script>
+<!-- #three css 링크 : 아래에 위치시키기 -->
+    <link rel="stylesheet" href="css/three.css">
+
+<!-- 마우스휠 -->
+    <script type="text/javascript">
+        window.onload = function () {
+            var elm = ".box";
+            $(elm).each(function (index) {
+                // 개별적으로 Wheel 이벤트 적용
+                $(this).on("mousewheel DOMMouseScroll", function (e) {
+                    e.preventDefault();
+                    var delta = 0;
+                    if (!event) event = window.event;
+                    if (event.wheelDelta) {
+                        delta = event.wheelDelta / 120;
+                        if (window.opera) delta = -delta;
+                    } 
+                    else if (event.detail)
+                        delta = -event.detail / 3;
+                    var moveTop = $(window).scrollTop();
+                    var elmSelecter = $(elm).eq(index);
+                    // 마우스휠을 위에서 아래로
+                    if (delta < 0) {
+                        if ($(elmSelecter).next() != undefined) {
+                            try{
+                                moveTop = $(elmSelecter).next().offset().top;
+                            }catch(e){}
+                        }
+                    // 마우스휠을 아래에서 위로
+                    } else {
+                        if ($(elmSelecter).prev() != undefined) {
+                            try{
+                                moveTop = $(elmSelecter).prev().offset().top;
+                            }catch(e){}
+                        }
+                    }
+                     
+                    // 화면 이동 0.8초(800)
+                    $("html,body").stop().animate({
+                        scrollTop: moveTop + 'px'
+                    }, {
+                        duration: 800, complete: function () {
+                        }
+                    });
+                });
+            });
+        }
+    </script>
+<!-- 마우스휠자연스럽게(메인unwrap) -->
+    <script>
+        $(document).ready(function(){
+            $("section").unwrap('main');
+        });
+    </script>
+<!-- aos -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    $(document).ready(function(){
+        AOS.init();
+    });
+ </script>
 </head>
 
 <body>
 <!-- 상단 -->
-<header>
+<header  class="box">
     <div class="wrap">
         <h1>COME INTO MY WORLD! : )</h1>
     </div>
 </header>
 <!-- 타이틀 -->
-<div id="title">
+<div id="title" class="box">
     <h2></h2>
     <a href="" class="scroll"></a>
 </div>
+<!-- 내용 -->
 <main>
-    <section id="one">
+    <section id="one" class="box">
         <div class="wrap">
-            <div class="intro">
+            <div class="intro" data-aos="fade-right" data-aos-duration="2000">
                 <h2>WHO AM I</h2>
                 <article>
                     <a href="" class="photobox"></a>
                     <ul>
-                        <li>안녕하세요</li>
-                        <li>저는 이러한 사람입니다</li>
-                        <li>이러한 포부를 가지고 있습니다</li>
+                        <li>" about <span>mimi</span> "</li>
+                        <li>안녕하세요! 웹퍼블리셔를 꿈꾸는 박미예입니다 :)<br>탄탄한 실력을 키우기 위해 여러가지 경험을 해보고 있어요</li>
+                        <li><br>코딩에 대해서는 초보이지만 20대 초반에 경험해왔던것들을<br>바탕으로 열심히 꿈을 향해 나아가는 중입니다!<br>주어진 일을 할때에는 "내가 행복하게!"<br>라는 마인드를 가지고 업무에 임하고 있어요</li>
                     </ul>
                 </article>
-                <p>이름 : 박미예<br>생년월일 : 2000/07/16</p>
+                <p><span>박미예</span>(park mi ye)<br>2***.**.**<br>(+82)10.8***.****<br>mysg0609@naver.com</p>
             </div>
-            <div class="about">
+            <div class="about" data-aos="fade-left" data-aos-duration="2000">
                 <article class="edu">
                     <ul>
                         <li>EDUCATION</li>
@@ -86,33 +172,30 @@
             </div>
         </div>
     </section>
-    <section id="two">
+    <section id="two" class="box">
         <div class="wrap">
             <h2>CONTENTS</h2>
             <div class="contents">
-                <article>
-                    <h3>work 1</h3>
+                <article data-aos="fade-right" data-aos-duration="2000">
                     <figure>
                         <img src="img/c1.png" alt="">
-                        <figcaption>UI/UX WEBSITE</figcaption>
+                        <figcaption><span>| work1 |</span>UI/UX WEBSITE</figcaption>
                     </figure>    
                     <p>여러 홈페이지를 카피하여 제작하였습니다</p>
                     <p></p>
                 </article>
-                <article>
-                    <h3>work 2</h3>
+                <article data-aos="fade-up" data-aos-duration="2000">
                     <figure>
                         <img src="img/c2.png" alt="">
-                        <figcaption>MAKING A POSTER</figcaption>
+                        <figcaption><span>| work2 |</span>MAKING A POSTER</figcaption>
                     </figure>    
                     <p>인포그래픽, 굿즈 포스터를 제작하였습니다</p>
                     <p></p>
                 </article>
-                <article>
-                    <h3>work 3</h3>
+                <article data-aos="fade-left" data-aos-duration="2000">
                     <figure>
                         <img src="img/c3.png" alt="">
-                        <figcaption>CREATE A CALENDAR</figcaption>
+                        <figcaption><span>| work3 |</span>CREATE A CALENDAR</figcaption>
                     </figure>    
                     <p>저만의 달력을 제작하였습니다</p>
                     <p></p>
@@ -120,50 +203,103 @@
             </div>
         </div>
     </section>
-    <section id="three">
+    <section id="three" class="box">
         <div class="back">
             <div class="wrap">
                 <nav>
                     <h2>WORK 1</h2>
-                    <ul>
-                        <li>▶ samsung ◀</li>
-                        <li>▶ kai ◀</li>
-                        <li>▶ cgv ◀</li>
-                        <li>▶ gongcha ◀</li>
-                        <li>▶ artbox ◀</li>
-                        <li>▶ jquary ◀</li>
-                    </ul>
                 </nav>
-                <article class="copy">
-                    <ul>
-                        <li>SAMSUNG홈페이지</li>
-                        <li>< 포트폴리용 카피사이트 제작 ></li>
-                        <li>작업물 기여도 - 100%</li>
-                    </ul>
-                    <a href="" class="site"></a>
-                </article>
+                <div class="wrap2 threeslide">
+                    <article class="copy">
+                        <ul>
+                            <li>SAMSUNG</li>
+                            <li>< 포트폴리용 카피사이트 제작 ></li>
+                            <li><span>| 작업물 기여도 |</span> 100%<br><span>| 사용 도구 |</span> Photoshop visual studio code</li>
+                        </ul>
+                        <a href="" class="site1"></a>
+                    </article>
+                    <article class="copy">
+                        <ul>
+                            <li>한국알콜산업 KAI</li>
+                            <li>< 포트폴리용 카피사이트 제작 ></li>
+                            <li><span>| 작업물 기여도 |</span> 100%<br><span>| 사용 도구 |</span> Photoshop, visual studio code</li>
+                        </ul>
+                        <a href="" class="site2"></a>
+                    </article>
+                    <article class="copy">
+                        <ul>
+                            <li>공차 GONGGHA</li>
+                            <li>< 포트폴리용 카피사이트 제작 ></li>
+                            <li><span>| 작업물 기여도 |</span> 100%<br><span>| 사용 도구 |</span> illustration, visual studio code, scss</li>
+                        </ul>
+                        <a href="" class="site3"></a>
+                    </article>
+                    <article class="copy">
+                        <ul>
+                            <li>CGV</li>
+                            <li>< 포트폴리용 카피사이트 제작 ></li>
+                            <li><span>| 작업물 기여도 |</span> 100%<br><span>| 사용 도구 |</span> Photoshop, visual studio code</li>
+                        </ul>
+                        <a href="" class="site4"></a>
+                    </article>
+                    <article class="copy">
+                        <ul>
+                            <li>ARTBOX</li>
+                            <li>< 포트폴리용 카피사이트 제작 ></li>
+                            <li><span>| 작업물 기여도 |</span> 100%<br><span>| 사용 도구 |</span> illustration, visual studio code, scss</li>
+                        </ul>
+                        <a href="" class="site5"></a>
+                    </article>
+                    <article class="copy">
+                        <ul>
+                            <li>JQUERY</li>
+                            <li>< 포트폴리용 웹사이트 제작 ></li>
+                            <li><span>| 작업물 기여도 |</span> 100%<br><span>| 사용 도구 |</span> Photoshop, visual studio code</li>
+                        </ul>
+                        <a href="" class="site6"></a>
+                    </article>
+                </div>
             </div>
         </div>
     </section>
-    <section id="four">
+    <section id="four" class="box">
+        <div class="back"></div>
         <div class="wrap">
-            <h2>WORK 2</h2>
             <div class="wrap2">
-                <div class="left">
-                    <p></p>
-                    <h3>POSTER 제작</h3>
-                    <p></p>
+                <div class="left" data-aos="fade-up" data-aos-duration="2000">
+                    <a href="">2021~2022</a>
+                    <h3>Creating posters</h3>
+                    <p>디자인을 처음 접했을 당시,<br>좋아하고 관심있는 것들로 저만의 포스터들을 만들어 보았어요 :)<br>서툴지만 그만큼 노력이 깃들은 제작물들이기에<br>더욱 소중한 작품들입니다.<br>이러한 경험들을 바탕으로 하여 더 많고 폭 넓은<br>저만의 디자인을 연구하려고 노력중입니다 !</p>
                 </div>
                 <div class="right">
                     <article class="in">
                         <a href=""></a>
                         <h4>인포그래픽 poster</h4>
-                        <p>분리수거와 분리배출의 차이점을 알려주는 포스터를 제작하였습니다.<br></p>
-                    </article class="go">
-                    <article>
+                        <p>분리수거와 분리배출의 차이점을 알려주는<br>포스터를 제작하였습니다.<br></p>
+                    </article>
+                    <article class="go">
                         <a href=""></a>
                         <h4>굿즈 poster</h4>
-                        <p>저의 최애 음식!인 치즈를 사용해 굿즈들을 만들어 포스터를 제작하였습니다.<br></p>
+                        <p>저의 최애 음식!인 치즈를 사용해 굿즈들을 만들어<br>포스터를 제작하였습니다.<br></p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section id="five" class="box">
+        <div class="back"></div>
+        <div class="wrap">
+            <div class="wrap2">
+                <div class="left" data-aos="fade-up" data-aos-duration="2000">
+                    <a href="">2021~2022</a>
+                    <h3>Creating calendar</h3>
+                    <p>대학시절 달력이나 베너 티셔츠 등등,<br>많은 제작물들을 직접 디자인하여 만들어보고<br>실사제작까지 해보는 경험을 해봤어요 :)<br>그중에서도 제가 가장 애정하는 디즈니 달력입니다.<br>디즈니 공주들을 일러스트로 표현하였고<br>공주들을 상징하는 물건들도 하나씩 넣어<br>배경을 더 꽉 채우게 되었습니다.<br>이렇게 저만의 스타일을 찾아가려 많은 경험을 해보았습니다!</p>
+                </div>
+                <div class="right">
+                    <article class="ca">
+                        <a href=""></a>
+                        <h4>calendar<br>with disney princesses</h4>
+                        <p>디즈니에 나오는 공주들을 일러스트화하여<br>캘린더를 제작하였습니다.<br></p>
                     </article>
                 </div>
             </div>
@@ -171,10 +307,10 @@
     </section> 
 </main>
 <!-- 하단 -->
-<footer>
-    <div id="five">
-        <div class="wrap">
-            <p></p>
+<footer class="box">
+    <div id="end">
+        <p class="logo">logo</p>
+        <div class="wrap" data-aos="flip-right" data-aos-duration="2000">
             <h3 class="h3">Any more questions?</h3>
             <ul class="mail flex">
                 <li><a href="">mysg0609@naver.com</a></li>
