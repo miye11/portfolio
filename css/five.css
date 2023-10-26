@@ -77,9 +77,9 @@
   
 }
 #five .right article .cal{
-  overflow: hidden;
+  /*! overflow: hidden; */
   width: 800px;
-  height: 600px;
+  height: 600px; 
 }
 #five .right .cal figure{
 
@@ -99,7 +99,6 @@
 }
 #five .right article h4{
   font-size: 25px;
-  margin-top: 50px;
   line-height: 1.5;
 }
 #five .right article h4 span{
@@ -110,4 +109,25 @@
 #five .right article p{
   line-height: 2;
   margin-top: 30px;
+} 
+#five .slick-prev{
+  border-top: 4px solid #878787;
+  border-right: 4px solid #878787;
+  transform: rotate(225deg);
+  left: -60px;
+  width: 40px;
+  height: 40px;
+  top: 200px;
+} 
+#five .slick-next{
+  border-top: 4px solid #878787;
+  border-right: 4px solid #878787;
+  transform: rotate(45deg);
+  right: -40px;
+  width: 40px;
+  height: 40px;
+  top: 200px;
+}
+#five .slick-dots{
+  font-size: 0;
 }

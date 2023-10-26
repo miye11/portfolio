@@ -129,42 +129,46 @@
   background-position: center;
   background-size: 130% 110%;
   transition: all 0.5s;
+  box-shadow: 13px 12px #0003;
 }
 #three .wrap2 .copy .site:hover{
    background-size: 140% 120%;
 }
 #three .wrap2 .copy .site1{
- background-image: url(../img/samsung.png);
+ background-image: url(../img/samsung1.png);
 }
 #three .wrap2 .copy .site2{
- background-image: url(../img/kai.png);
+ background-image: url(../img/samsung2.png);
 }
 #three .wrap2 .copy .site3{
- background-image: url(../img/gongcha.png);
+ background-image: url(../img/kai.png);
 }
 #three .wrap2 .copy .site4{
- background-image: url(../img/cgv.png);
+ background-image: url(../img/gongcha.png);
 }
 #three .wrap2 .copy .site5{
- background-image: url(../img/artbox.png);
+ background-image: url(../img/cgv.png);
 }
 #three .wrap2 .copy .site6{
- background-image: url(../img/jquary.png);
+ background-image: url(../img/artbox.png);
 }
 #three .wrap2 .copy .site7{
- background-image: url(../img/subway.png);
+ background-image: url(../img/jquary.png);
 }
 #three .wrap2 .copy .site8{
+ background-image: url(../img/subway.png);
+}
+#three .wrap2 .copy .site9{
  background-image: url(../img/hitejinro.png);
 }
 #three .slick-prev{
-  border-top: 3px solid black;
-  border-right: 3px solid black;
+  border-top: 3px solid #878787;
+  border-right: 3px solid #878787;
   transform: rotate(225deg);
   z-index: 1;
 }
 #three .slick-next{
-  border-top: 3px solid black;
-  border-right: 3px solid black;
+  border-top: 3px solid #878787;
+  border-right: 3px solid #878787;
   transform: rotate(45deg);
 }

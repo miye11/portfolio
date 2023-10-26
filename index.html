@@ -29,19 +29,19 @@
             });
             $('.slick-dots').appendTo('#three nav');
             $('#three nav .slick-dots').css("position","static");
-            var menu =['SAMSUNG','KAI','GONGCHA','CGV','ARTBOX','JQUARY','SUBWAY','HITEJINRO'];
+            var menu =['SAMSUNG1','SAMSUNG2','KAI','GONGCHA','CGV','ARTBOX','JQUARY','SUBWAY','HITEJINRO'];
             var i=0;
             $(".slick-dots li").each(function(){
                 $(this).children().text(menu[i]);
                 i++;
             });
-
             $('.fivefade').slick({
-            infinite: true,
-            speed: 500,
-            fade: true,
-            cssEase: 'linear'
-            });
+                dots: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear'
+                });
         });
     </script>
 <!-- #three css 링크 : 아래에 위치시키기 -->
@@ -110,15 +110,14 @@
 
 <body>
 <!-- 상단 -->
-<header  class="box">
+<header id="top" class="box">
     <div class="wrap">
-        <h1>COME INTO MY WORLD! : )</h1>
+        <h1><a href="file:///D:/%EA%B5%AD%EA%B8%B0.%EB%AA%A8%EB%9E%80%EC%A0%90/4.%20%EC%BD%94%EB%94%A9%EC%9E%91%EC%97%85%EB%AC%BC/portfolio/index.html">COME INTO MY WORLD! : )</a></h1>
     </div>
 </header>
 <!-- 타이틀 -->
 <div id="title" class="box">
     <h2></h2>
-    <a href="" class="scroll"></a>
 </div>
 <!-- 내용 -->
 <main>
@@ -217,78 +216,123 @@
                     <a href=""><span>WORK 1</span> WEBSITE</a>
                     <h2>CREATING WEBSITE</h2>
                 </nav>
-                <div class="wrap2 threeslide">
+                <div class="wrap2 threeslide" data-aos="fade-up" data-aos-duration="2000">
                     <article class="copy">
                         <ul>
-                            <li>SAMSUNG</li>
+                            <li>SAMSUNG1</li>
                             <li>< 포트폴리용 카피사이트 제작 ></li>
-                            <li><span>| 작업물 기여도 |</span> 100%<br><span>| 사용 도구 |</span> Photoshop visual studio code</li>
-                            <li><a href="https://miye11.github.io/samsung/" class="siteview">상세페이지 보러가기</a></li>
+                            <li>
+                                <span>| 페이지 |</span> mainpage<br>
+                                <span>| 기여도 |</span> 1인 · 100%<br>
+                                <span>| 사용 도구 |</span> Photoshop · visual studio code
+                            </li>
+                            <li><a href="https://miye11.github.io/samsung1/" class="siteview">상세페이지 보러가기</a></li>
                         </ul>
                         <a href="" class="site site1"></a>
                     </article>
                     <article class="copy">
                         <ul>
-                            <li>한국알콜산업 KAI</li>
-                            <li>< 포트폴리용 카피사이트 제작 ></li>
-                            <li><span>| 작업물 기여도 |</span> 100%<br><span>| 사용 도구 |</span> Photoshop, visual studio code</li>
-                            <li><a href="https://miye11.github.io/kai/" class="siteview">상세페이지 보러가기</a></li>
+                            <li>SAMSUNG2</li>
+                            <li>< 포트폴리용 사이트 리뉴얼 제작 ></li>
+                            <li>
+                                <span>| 페이지 |</span> mainpage<br>
+                                <span>| 기여도 |</span> 1인 · 100%<br>
+                                <span>| 사용 도구 |</span> Photoshop · visual studio code
+                            </li>
+                            <li><a href="https://miye11.github.io/samsung2/" class="siteview">상세페이지 보러가기</a></li>
                         </ul>
                         <a href="" class="site site2"></a>
                     </article>
                     <article class="copy">
                         <ul>
-                            <li>공차 GONGGHA</li>
+                            <li>한국알콜산업 KAI</li>
                             <li>< 포트폴리용 카피사이트 제작 ></li>
-                            <li><span>| 작업물 기여도 |</span> 100%<br><span>| 사용 도구 |</span> illustration, visual studio code, scss</li>
-                            <li><a href="https://miye11.github.io/gongcha/" class="siteview">상세페이지 보러가기</a></li>
+                            <li>
+                                <span>| 페이지 |</span> mainpage<br>
+                                <span>| 기여도 |</span> 1인 · 100%<br>
+                                <span>| 사용 도구 |</span> Photoshop · visual studio code
+                            </li>
+                            <li><a href="https://miye11.github.io/kai/" class="siteview">상세페이지 보러가기</a></li>
                         </ul>
                         <a href="" class="site site3"></a>
                     </article>
                     <article class="copy">
                         <ul>
-                            <li>CGV</li>
+                            <li>공차 GONGGHA</li>
                             <li>< 포트폴리용 카피사이트 제작 ></li>
-                            <li><span>| 작업물 기여도 |</span> 100%<br><span>| 사용 도구 |</span> Photoshop, visual studio code</li>
-                            <li><a href="https://miye11.github.io/cgv/" class="siteview">상세페이지 보러가기</a></li>
+                            <li>
+                                <span>| 페이지 |</span> mainpage<br>
+                                <span>| 기여도 |</span> 1인 · 100%<br>
+                                <span>| 사용 도구 |</span> illustration · visual studio code · scss
+                            </li>
+                            <li><a href="https://miye11.github.io/gongcha/" class="siteview">상세페이지 보러가기</a></li>
                         </ul>
                         <a href="" class="site site4"></a>
                     </article>
                     <article class="copy">
                         <ul>
-                            <li>ARTBOX</li>
+                            <li>CGV</li>
                             <li>< 포트폴리용 카피사이트 제작 ></li>
-                            <li><span>| 작업물 기여도 |</span> 100%<br><span>| 사용 도구 |</span> illustration, visual studio code, scss</li>
-                            <li><a href="https://miye11.github.io/artbox/" class="siteview">상세페이지 보러가기</a></li>
+                            <li>
+                                <span>| 페이지 |</span> mainpage<br>
+                                <span>| 기여도 |</span> 1인 · 100%<br>
+                                <span>| 사용 도구 |</span> illustration · visual studio code · scss
+                            </li>
+                            <li><a href="https://miye11.github.io/cgv/" class="siteview">상세페이지 보러가기</a></li>
                         </ul>
                         <a href="" class="site site5"></a>
                     </article>
                     <article class="copy">
                         <ul>
-                            <li>JQUERY</li>
-                            <li>< 포트폴리용 웹사이트 제작 ></li>
-                            <li><span>| 작업물 기여도 |</span> 100%<br><span>| 사용 도구 |</span> Photoshop, visual studio code</li>
-                            <li><a href="https://parkmiye.github.io/jquery/" class="siteview">상세페이지 보러가기</a></li>
+                            <li>ARTBOX</li>
+                            <li>< 포트폴리용 카피사이트 제작 ></li>
+                            <li>
+                                <span>| 페이지 |</span> mainpage<br>
+                                <span>| 기여도 |</span> 1인 · 100%<br>
+                                <span>| 사용 도구 |</span> illustration · visual studio code · scss
+                            </li>
+                            <li><a href="https://miye11.github.io/artbox/" class="siteview">상세페이지 보러가기</a></li>
                         </ul>
                         <a href="" class="site site6"></a>
                     </article>
                     <article class="copy">
                         <ul>
-                            <li>SUBWAY</li>
+                            <li>JQUERY</li>
                             <li>< 포트폴리용 웹사이트 제작 ></li>
-                            <li><span>| 작업물 기여도 |</span> 100%<br><span>| 사용 도구 |</span> illustration, visual studio code, scss</li>
-                            <li><a href="https://miye11.github.io/subway/" class="siteview">상세페이지 보러가기</a></li>
+                            <li>
+                                <span>| 페이지 |</span> mainpage<br>
+                                <span>| 기여도 |</span> 1인 · 100%<br>
+                                <span>| 사용 도구 |</span>visual studio code · scss
+                            </li>
+                            <li><a href="https://parkmiye.github.io/jquery/" class="siteview">상세페이지 보러가기</a></li>
                         </ul>
                         <a href="" class="site site7"></a>
                     </article>
                     <article class="copy">
                         <ul>
-                            <li>HITEJINRO</li>
-                            <li>< 포트폴리용 웹사이트 제작 ></li>
-                            <li><span>| 작업물 기여도 |</span> 100%<br><span>| 사용 도구 |</span> Photoshop, visual studio code, scss</li>
-                            <li><a href="https://miye11.github.io/hite/" class="siteview">상세페이지 보러가기</a></li>
+                            <li>SUBWAY</li>
+                            <li>< 포트폴리용 카피사이트 제작 ></li>
+                            <li>
+                                <span>| 페이지 |</span> mainpage<br>
+                                <span>| 기여도 |</span> 1인 · 100%<br>
+                                <span>| 사용 도구 |</span> illustration · visual studio code · scss
+                            </li>
+                            <li><a href="https://miye11.github.io/subway/" class="siteview">상세페이지 보러가기</a></li>
                         </ul>
                         <a href="" class="site site8"></a>
+                    </article>
+                    <article class="copy">
+                        <ul>
+                            <li>HITEJINRO</li>
+                            <li>< 포트폴리용 카피사이트 제작 ></li>
+                            <li>
+                                <span>| 페이지 |</span> mainpage<br>
+                                <span>| 기여도 |</span> 1인 · 100%<br>
+                                <span>| 사용 도구 |</span> Photoshop · visual studio code · scss
+                            </li>
+                            <li><a href="https://miye11.github.io/hite/" class="siteview">상세페이지 보러가기</a></li>
+                        </ul>
+                        <a href="" class="site site9"></a>
                     </article>
                 </div>
             </div>
@@ -325,12 +369,12 @@
                 <div class="left" data-aos="fade-up" data-aos-duration="2000">
                     <a href=""><span>WORK 3</span> INDESIGN</a>
                     <h3>CREATING CALENDER</h3>
-                    <p>대학시절 달력이나 베너 티셔츠 등등,<br>많은 제작물들을 직접 디자인하여 만들어보고<br>실사제작까지 해보는 경험을 해보았어요 :)<br>그중에서도 제가 가장 애정하는 디즈니 달력입니다.<br>디즈니 공주들을 일러스트로 표현하였고<br>공주들을 상징하는 물건들도 하나씩 넣어<br>배경을 더 꽉 채우게 되었습니다.<br>이렇게 저만의 스타일을 찾아가려 많은 경험을 해보았습니다!</p>
+                    <p>대학시절 달력이나 베너 티셔츠 등등,<br>많은 제작물들을 직접 디자인하여 만들어보고<br>실사제작까지 해보는 경험을 해보았어요 :)<br>그중에서도 제가 가장 애정하는 디즈니 달력입니다.<br>일러스트레이션을 활용해 캐릭터를 제작하고<br>인디자인을 활용해 레이아웃을 마무리 하였습니다.<br>공주들을 상징하는 오브젯들도 추가하여<br>배경을 더 꽉 채우도록 하였습니다.<br>이렇게 저만의 스타일을 찾아가려 많은 경험을 해보았습니다!</p>
                 </div>
                 <div class="right">
                     <article>
-                        <!-- <div class="month">
-                            <ul class="cal">
+                        <div class="month">
+                            <ul class="cal fivefade">
                                 <li>
                                     <figure>
                                         <img src="img/ca1.png" alt="사진">
@@ -392,15 +436,6 @@
                                     </figure>
                                 </li>
                             </ul>
-                        </div> -->
-                        <div class="month">
-                            <ul class="cal">
-                                <li>
-                                    <figure>
-                                        <img src="img/ca4.png" alt="사진">
-                                    </figure>
-                                </li>
-                            </ul>
                         </div>
                         <h4><span>디즈니 PRINCESS</span><br>CALENDER</h4>
                         <p>디즈니에 나오는 공주들을 일러스트화하여<br>캘린더를 제작하였습니다.<br></p>
@@ -413,7 +448,8 @@
 <!-- 하단 -->
 <footer class="box">
     <div id="end">
-        <p class="logo">logo</p>
+        <p><a href="#top" class="btop">go to the top</a></p>
+        <a href="" class="click">☆click this☆</a>
         <div class="wrap" data-aos="flip-right" data-aos-duration="2000">
             <h3 class="h3">Any more questions?</h3>
             <ul class="mail flex">
