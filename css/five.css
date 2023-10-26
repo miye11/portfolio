@@ -35,11 +35,14 @@
   border: 2px solid #e7dae8;
   text-align: center;
   border-radius: 20px;
-  width: 100px;
+  width: 200px;
   margin-bottom: 50px;
   transition: all 0.2s;
   padding: 10px;
   color: #e7dae8;
+} 
+#five .left a span{
+  font-weight: bold;
 }
 #five .left a:hover{
   border: 1px solid #656565;
@@ -62,40 +65,49 @@
 #five .right{
   display: flex;
   justify-content: start;
-  width: 900px; 
+  height: 800px;
+  align-items: center;
+  width: 900px;
   order: 1;
 }
 #five .right article{
   text-align: center;
-  margin-bottom: 50px;
 }
-#five .right article a{ 
+#five .right article .month{
+  
+}
+#five .right article .cal{
+  overflow: hidden;
+  width: 800px;
+  height: 600px;
+}
+#five .right .cal figure{
+
+}
+#five .right .cal figure img{
   display: block; 
   width: 800px;
   height: 500px;
   border-radius: 20px;
   text-align: center;
-  background-image: url(../img/ca.png);
-  background-size: 110% 110%;
+  scale : 100% 100%;
   background-position: center;
   transition: all 0.5s;
 }
-#five .right article a:hover{
-  background-size: 120% 120%;
+#five .right .cal figure img:hover{
+  scale: 110% 110%;
 }
 #five .right article h4{
   font-size: 25px;
-  margin-top: 30px;
-  line-height: 1.2;
+  margin-top: 50px;
+  line-height: 1.5;
+}
+#five .right article h4 span{
+  font-weight: bold;
+  color: #9d7ea5;
+  letter-spacing: 3px;
 }
 #five .right article p{
   line-height: 2;
-  margin-top: 20px;
+  margin-top: 30px;
 }
-
-
-
-
-
-
-

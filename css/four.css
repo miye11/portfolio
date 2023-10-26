@@ -34,11 +34,14 @@
   border: 2px solid #e7dae8;
   text-align: center;
   border-radius: 20px;
-  width: 100px;
+  width: 200px;
   margin-bottom: 50px;
   transition: all 0.2s;
   padding: 10px;
   color: #e7dae8;
+}
+#four .left a span{
+  font-weight: bold;
 }
 #four .left a:hover{
   border: 1px solid #656565;
@@ -84,6 +87,12 @@
 #four .right article h4{
   font-size: 25px;
   margin-top: 40px;
+}
+#four .right article h4 span{
+  
+  font-weight: bold;
+  color: #9d7ea5;
+  letter-spacing: 3px;
 }
 #four .right article p{
   line-height: 2;

@@ -2,7 +2,7 @@
   width: 100%;
   height: 900px;
   margin-bottom: 150px;
-  background-image: url(../img/three.png);
+  /*! background-image: url(../img/three.png); */
   background-repeat: no-repeat;
   background-position: center;
 } 
@@ -13,12 +13,30 @@
   padding-top: 50px;
 }  
 #three .wrap{ 
-    
+  margin-top: 50px;
 }
 #three .wrap nav{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#three .wrap nav a{
+  border: 2px solid #8897b385;
+  text-align: center;
+  border-radius: 20px;
+  width: 200px;
+  margin-bottom: 15px;
+  transition: all 0.2s;
+  padding: 10px;
+  color: #b9c4d5;
+  margin-right: 605px;
+}
+#three .wrap nav a span{
+  font-weight: bold;
+}
+#three .wrap nav a:hover{
+  border: 1px solid #656565;
+  color: #656565;
 }
 #three .wrap nav h2{
   font-size: 70px;
@@ -86,21 +104,33 @@
   
 }
 #three .wrap2 .copy ul li span{
-  
   color: #757575;
   font-weight: bold;
 }
-#three .wrap2 .copy a{
+#three .wrap2 .copy .siteview{
+  border: 1px solid #e9e9e9;
+  border-radius: 20px;
+  transition: all 0.2s;
+  width: 150px;
+  display: block;
+  padding: 0px 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+#three .wrap2 .copy .siteview:hover{
+  border: 1px solid black;
+}
+#three .wrap2 .copy .site{
   display: block;
   width: 500px;
   height: 300px;
-  border: 1px solid;
+  border: 1px solid #e9e9e9;
   border-radius: 80px;
   background-position: center;
   background-size: 130% 110%;
   transition: all 0.5s;
 }
-#three .wrap2 .copy a:hover{
+#three .wrap2 .copy .site:hover{
    background-size: 140% 120%;
 }
 #three .wrap2 .copy .site1{
@@ -120,6 +150,12 @@
 }
 #three .wrap2 .copy .site6{
  background-image: url(../img/jquary.png);
+}
+#three .wrap2 .copy .site7{
+ background-image: url(../img/subway.png);
+}
+#three .wrap2 .copy .site8{
+ background-image: url(../img/hitejinro.png);
 }
 #three .slick-prev{
   border-top: 3px solid black;
