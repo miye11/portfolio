@@ -16,96 +16,96 @@
     <link rel="stylesheet" href="css/end.css">
 
 <!-- 자바 -->
-<script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/javascript"></script>
 
-<!-- 슬릭 -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.threeslide').slick({
-                dots: true
-            });
-            $('.slick-dots').appendTo('#three nav');
-            $('#three nav .slick-dots').css("position","static");
-            var menu =['SAMSUNG1','SAMSUNG2','KAI','GONGCHA','CGV','ARTBOX','JQUARY','SUBWAY','HITEJINRO'];
-            var i=0;
-            $(".slick-dots li").each(function(){
-                $(this).children().text(menu[i]);
-                i++;
-            });
-            $('.fivefade').slick({
-                dots: true,
-                infinite: true,
-                speed: 500,
-                fade: true,
-                cssEase: 'linear'
+    <!-- 슬릭 -->
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.threeslide').slick({
+                    dots: true
                 });
-        });
-    </script>
-<!-- #three css 링크 : 아래에 위치시키기 -->
-    <link rel="stylesheet" href="css/three.css">
+                $('.slick-dots').appendTo('#three nav');
+                $('#three nav .slick-dots').css("position","static");
+                var menu =['SAMSUNG1','SAMSUNG2','KAI','GONGCHA','CGV','ARTBOX','JQUARY','SUBWAY','HITEJINRO', 'SKINFOOD'];
+                var i=0;
+                $(".slick-dots li").each(function(){
+                    $(this).children().text(menu[i]);
+                    i++;
+                });
+                $('.fivefade').slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 500,
+                    fade: true,
+                    cssEase: 'linear'
+                    });
+            });
+        </script>
+    <!-- #three css 링크 : 아래에 위치시키기 -->
+        <link rel="stylesheet" href="css/three.css">
 
-<!-- 마우스휠 -->
-    <script type="text/javascript">
-        window.onload = function () {
-            var elm = ".box";
-            $(elm).each(function (index) {
-                // 개별적으로 Wheel 이벤트 적용
-                $(this).on("mousewheel DOMMouseScroll", function (e) {
-                    e.preventDefault();
-                    var delta = 0;
-                    if (!event) event = window.event;
-                    if (event.wheelDelta) {
-                        delta = event.wheelDelta / 120;
-                        if (window.opera) delta = -delta;
-                    } 
-                    else if (event.detail)
-                        delta = -event.detail / 3;
-                    var moveTop = $(window).scrollTop();
-                    var elmSelecter = $(elm).eq(index);
-                    // 마우스휠을 위에서 아래로
-                    if (delta < 0) {
-                        if ($(elmSelecter).next() != undefined) {
-                            try{
-                                moveTop = $(elmSelecter).next().offset().top;
-                            }catch(e){}
+    <!-- 마우스휠 -->
+        <script type="text/javascript">
+            window.onload = function () {
+                var elm = ".box";
+                $(elm).each(function (index) {
+                    // 개별적으로 Wheel 이벤트 적용
+                    $(this).on("mousewheel DOMMouseScroll", function (e) {
+                        e.preventDefault();
+                        var delta = 0;
+                        if (!event) event = window.event;
+                        if (event.wheelDelta) {
+                            delta = event.wheelDelta / 120;
+                            if (window.opera) delta = -delta;
+                        } 
+                        else if (event.detail)
+                            delta = -event.detail / 3;
+                        var moveTop = $(window).scrollTop();
+                        var elmSelecter = $(elm).eq(index);
+                        // 마우스휠을 위에서 아래로
+                        if (delta < 0) {
+                            if ($(elmSelecter).next() != undefined) {
+                                try{
+                                    moveTop = $(elmSelecter).next().offset().top;
+                                }catch(e){}
+                            }
+                        // 마우스휠을 아래에서 위로
+                        } else {
+                            if ($(elmSelecter).prev() != undefined) {
+                                try{
+                                    moveTop = $(elmSelecter).prev().offset().top;
+                                }catch(e){}
+                            }
                         }
-                    // 마우스휠을 아래에서 위로
-                    } else {
-                        if ($(elmSelecter).prev() != undefined) {
-                            try{
-                                moveTop = $(elmSelecter).prev().offset().top;
-                            }catch(e){}
-                        }
-                    }
-                     
-                    // 화면 이동 0.8초(800)
-                    $("html,body").stop().animate({
-                        scrollTop: moveTop + 'px'
-                    }, {
-                        duration: 800, complete: function () {
-                        }
+                        
+                        // 화면 이동 0.8초(800)
+                        $("html,body").stop().animate({
+                            scrollTop: moveTop + 'px'
+                        }, {
+                            duration: 800, complete: function () {
+                            }
+                        });
                     });
                 });
+            }
+        </script>
+    <!-- 마우스휠자연스럽게(메인unwrap) -->
+        <script>
+            $(document).ready(function(){
+                $("section").unwrap('main');
             });
-        }
-    </script>
-<!-- 마우스휠자연스럽게(메인unwrap) -->
+        </script>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         $(document).ready(function(){
-            $("section").unwrap('main');
+            AOS.init();
         });
     </script>
-<!-- aos -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    $(document).ready(function(){
-        AOS.init();
-    });
- </script>
 </head>
 
 <body>
@@ -337,6 +337,19 @@
                             <li><a href="https://miye11.github.io/hite/" class="siteview">상세페이지 보러가기</a></li>
                         </ul>
                         <a href="" class="site site9"></a>
+                    </article>
+                    <article class="copy">
+                        <ul>
+                            <li>SKINFOOD</li>
+                            <li>< 포트폴리용 카피사이트 제작 ></li>
+                            <li>
+                                <span>| 페이지 |</span> mainpage<br>
+                                <span>| 기여도 |</span> 1인 · 100%<br>
+                                <span>| 사용 도구 |</span> Photoshop · visual studio code · sass
+                            </li>
+                            <li><a href="https://miye11.github.io/skinfood/" class="siteview">상세페이지 보러가기</a></li>
+                        </ul>
+                        <a href="" class="site site10"></a>
                     </article>
                 </div>
             </div>
