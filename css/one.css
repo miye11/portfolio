@@ -2,7 +2,7 @@
 #one {
   width: 100%;
   margin-top: 50px;
-}  
+} 
 #one .wrap {
   height: 1000px;
   display: flex;
@@ -84,7 +84,7 @@
   justify-content: center;
   align-items: end;
   width: 500px;
-  padding-bottom: 170px;
+  padding-bottom: 150px;
 }
 #one .about article{
   width: 600px;
@@ -94,22 +94,16 @@
   align-items: center;
 }
 #one .about .edu{
-  margin-bottom: 110px;
+  margin-bottom: 70px;
 }
 #one .about .edu ul{
   line-height: 3;
-  right: 60px;
-  position: relative;
-  top: 60px;
 }
 #one .about .edu ul li{
   
 }
 #one .about .edu ul li:nth-child(1){
-  font-size: 30px; 
-  position: absolute;
-  top: -100px; 
-  left: 114px;
+  font-size: 30px;
 }
 #one .about .edu ul li span{
   color: #757575;
