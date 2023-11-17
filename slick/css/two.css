@@ -1,0 +1,54 @@
+#two{
+  width: 100%;
+  padding-top: 50px;
+  background-color: #E8F4FD;
+}  
+#two .wrap{
+  height: 900px;
+} 
+#two .wrap h2 {
+  font-size: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  font-family: 'OKDDUNG';
+  letter-spacing: 5px;
+}
+#two .wrap h2::before{
+  content: "";
+  display: inline-block;
+  background-image: url(../img/menuwave.png);
+  width: 200px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 50px;
+}
+#two .contents{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 150px;
+} 
+#two .contents article{
+  text-align: center;
+  line-height: 3;
+}
+#two .contents h3{
+  font-size: 30px;
+}
+#two .contents article figure{
+   
+}
+#two .contents article figure img{
+  height: 300px;
+}
+#two .contents article figure figcaption{
+  margin-top: 30px;
+  font-size: 23px;
+}
+#two .contents article figure figcaption span{
+  
+  margin-right: 10px;
+  color: #757575;
+  font-weight: bold;
+}

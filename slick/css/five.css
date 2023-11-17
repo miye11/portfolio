@@ -1,0 +1,133 @@
+#five{
+  width: 100%;
+  position: relative;
+}  
+#five .back{
+  width: 800px;
+  height: 1000px;
+  /*! background-color: #efe5f2; */
+  position: absolute;
+} 
+#five .wrap{
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#five .wrap2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1600px;
+  height: 900px;
+  position: relative;
+  margin-left: 50px;
+}
+#five .left{
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 200px;
+  order: 2;
+} 
+#five .left a{
+  border: 2px solid #e7dae8;
+  text-align: center;
+  border-radius: 20px;
+  width: 200px;
+  margin-bottom: 50px;
+  transition: all 0.2s;
+  padding: 10px;
+  color: #e7dae8;
+} 
+#five .left a span{
+  font-weight: bold;
+}
+#five .left a:hover{
+  border: 1px solid #656565;
+  color: #656565;
+}
+#five .left h3{
+  font-size: 70px;
+  color: #af84b2;
+  font-weight: bold;
+  font-family: 'OKDDUNG';
+  letter-spacing: 5px;
+}
+#five .left p{
+  margin-bottom: 250px;
+  line-height: 2.3;
+  margin-top: 100px;
+  color: #656565;
+  font-size: 17px;
+}
+#five .right{
+  display: flex;
+  justify-content: start;
+  height: 800px;
+  align-items: center;
+  width: 900px;
+  order: 1;
+}
+#five .right article{
+  text-align: center;
+}
+#five .right article .month{
+  
+}
+#five .right article .cal{
+  /*! overflow: hidden; */
+  width: 800px;
+  height: 600px; 
+}
+#five .right .cal figure{
+
+}
+#five .right .cal figure img{
+  display: block; 
+  width: 800px;
+  height: 500px;
+  border-radius: 20px;
+  text-align: center;
+  scale : 100% 100%;
+  background-position: center;
+  transition: all 0.5s;
+}
+#five .right .cal figure img:hover{
+  scale: 110% 110%;
+}
+#five .right article h4{
+  font-size: 25px;
+  line-height: 1.5;
+}
+#five .right article h4 span{
+  font-weight: bold;
+  color: #9d7ea5;
+  letter-spacing: 3px;
+}
+#five .right article p{
+  line-height: 2;
+  margin-top: 30px;
+} 
+#five .slick-prev{
+  border-top: 4px solid #878787;
+  border-right: 4px solid #878787;
+  transform: rotate(225deg);
+  left: -60px;
+  width: 40px;
+  height: 40px;
+  top: 200px;
+} 
+#five .slick-next{
+  border-top: 4px solid #878787;
+  border-right: 4px solid #878787;
+  transform: rotate(45deg);
+  right: -40px;
+  width: 40px;
+  height: 40px;
+  top: 200px;
+}
+#five .slick-dots{
+  font-size: 0;
+}

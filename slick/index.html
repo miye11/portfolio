@@ -1,0 +1,467 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>portfolio</title>
+
+<!-- css링크 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/one.css">
+    <link rel="stylesheet" href="css/two.css">
+    <link rel="stylesheet" href="css/four.css">
+    <link rel="stylesheet" href="css/five.css">
+    <link rel="stylesheet" href="css/end.css">
+
+<!-- 자바 -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/javascript"></script>
+
+<!-- 슬릭 -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.threeslide').slick({
+                dots: true
+            });
+            $('.slick-dots').appendTo('#three nav');
+            $('#three nav .slick-dots').css("position","static");
+            var menu =['SAMSUNG1','SAMSUNG2','KAI','GONGCHA','CGV','ARTBOX','JQUARY','SUBWAY','HITEJINRO'];
+            var i=0;
+            $(".slick-dots li").each(function(){
+                $(this).children().text(menu[i]);
+                i++;
+            });
+            $('.fivefade').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear'
+                });
+        });
+    </script>
+<!-- #three css 링크 : 아래에 위치시키기 -->
+    <link rel="stylesheet" href="css/three.css">
+
+<!-- 마우스휠 -->
+    <script type="text/javascript">
+        window.onload = function () {
+            var elm = ".box";
+            $(elm).each(function (index) {
+                // 개별적으로 Wheel 이벤트 적용
+                $(this).on("mousewheel DOMMouseScroll", function (e) {
+                    e.preventDefault();
+                    var delta = 0;
+                    if (!event) event = window.event;
+                    if (event.wheelDelta) {
+                        delta = event.wheelDelta / 120;
+                        if (window.opera) delta = -delta;
+                    } 
+                    else if (event.detail)
+                        delta = -event.detail / 3;
+                    var moveTop = $(window).scrollTop();
+                    var elmSelecter = $(elm).eq(index);
+                    // 마우스휠을 위에서 아래로
+                    if (delta < 0) {
+                        if ($(elmSelecter).next() != undefined) {
+                            try{
+                                moveTop = $(elmSelecter).next().offset().top;
+                            }catch(e){}
+                        }
+                    // 마우스휠을 아래에서 위로
+                    } else {
+                        if ($(elmSelecter).prev() != undefined) {
+                            try{
+                                moveTop = $(elmSelecter).prev().offset().top;
+                            }catch(e){}
+                        }
+                    }
+                     
+                    // 화면 이동 0.8초(800)
+                    $("html,body").stop().animate({
+                        scrollTop: moveTop + 'px'
+                    }, {
+                        duration: 800, complete: function () {
+                        }
+                    });
+                });
+            });
+        }
+    </script>
+<!-- 마우스휠자연스럽게(메인unwrap) -->
+    <script>
+        $(document).ready(function(){
+            $("section").unwrap('main');
+        });
+    </script>
+<!-- aos -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    $(document).ready(function(){
+        AOS.init();
+    });
+ </script>
+</head>
+
+<body>
+<!-- 상단 -->
+<header id="top" class="box">
+    <div class="wrap">
+        <h1><a href="file:///D:/%EA%B5%AD%EA%B8%B0.%EB%AA%A8%EB%9E%80%EC%A0%90/4.%20%EC%BD%94%EB%94%A9%EC%9E%91%EC%97%85%EB%AC%BC/portfolio/index.html">COME INTO MY WORLD! : )</a></h1>
+    </div>
+</header>
+<!-- 타이틀 -->
+<div id="title" class="box">
+    <h2></h2>
+</div>
+<!-- 내용 -->
+<main>
+    <section id="one" class="box">
+        <div class="wrap">
+            <div class="intro" data-aos="fade-right" data-aos-duration="2000">
+                <h2>WHO AM I</h2>
+                <article>
+                    <a href="" class="photobox"></a>
+                    <ul>
+                        <li>" about <span>mimi</span> "</li>
+                        <li>안녕하세요! 웹퍼블리셔를 꿈꾸는 박미예입니다 :)<br>탄탄한 실력을 키우기 위해 여러가지 경험을 해보고 있어요</li>
+                        <li><br>코딩에 대해서는 초보이지만 20대 초반에 경험해왔던것들을<br>바탕으로 열심히 꿈을 향해 나아가는 중입니다!<br>주어진 일을 할때에는 "내가 행복하게!"<br>라는 마인드를 가지고 업무에 임하고 있어요</li>
+                    </ul>
+                </article>
+                <p><span>박미예</span>(park mi ye)<br>2***.**.**<br>(+82)10.8***.****<br>mysg0609@naver.com</p>
+            </div>
+            <div class="about" data-aos="fade-left" data-aos-duration="2000">
+                <article class="edu">
+                    <ul>
+                        <li>EDUCATION</li>
+                        <li><span>| 2021 |</span> 신구대학교 <그래픽아츠과> 졸업</li>
+                        <li><span>| 2023 |</span> 컴퓨터활용 수업 수료</li>
+                        <li><span>| 2023 |</span> 웹코딩 수업 수료</li>
+                    </ul>
+                </article>
+                <article class="skill">
+                    <h3>SKILL</h3>
+                    <figure>
+                        <figcaption>PHOTOSHOP</figcaption>
+                        <img src="img/s3.png" alt="">
+                    </figure>
+                    <figure>
+                        <figcaption>ILLUSTRATION</figcaption>
+                        <img src="img/s1.png" alt="">
+                    </figure>
+                    <figure>
+                        <figcaption>INDESIGN</figcaption>
+                        <img src="img/s2.png" alt="">
+                    </figure>
+                    <figure>
+                        <figcaption>HTML</figcaption>
+                        <img src="img/s1.png" alt="">
+                    </figure>
+                    <figure>
+                        <figcaption>CSS</figcaption>
+                        <img src="img/s1.png" alt="">
+                    </figure>
+                    <figure>
+                        <figcaption>JAVASCRIPT</figcaption>
+                        <img src="img/s3.png" alt="">
+                    </figure>
+                    <figure>
+                        <figcaption>EXCEL</figcaption>
+                        <img src="img/s2.png" alt="">
+                    </figure>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="two" class="box">
+        <div class="wrap">
+            <h2>CONTENTS</h2>
+            <div class="contents">
+                <article data-aos="fade-right" data-aos-duration="2000">
+                    <figure>
+                        <img src="img/c1.png" alt="">
+                        <figcaption><span>| work1 |</span>UI/UX WEBSITE</figcaption>
+                    </figure>    
+                    <p>여러 홈페이지를 카피하여 제작하였습니다</p>
+                    <p></p>
+                </article>
+                <article data-aos="fade-up" data-aos-duration="2000">
+                    <figure>
+                        <img src="img/c2.png" alt="">
+                        <figcaption><span>| work2 |</span>MAKING A POSTER</figcaption>
+                    </figure>    
+                    <p>인포그래픽, 굿즈 포스터를 제작하였습니다</p>
+                    <p></p>
+                </article>
+                <article data-aos="fade-left" data-aos-duration="2000">
+                    <figure>
+                        <img src="img/c3.png" alt="">
+                        <figcaption><span>| work3 |</span>CREATE A CALENDAR</figcaption>
+                    </figure>    
+                    <p>저만의 달력을 제작하였습니다</p>
+                    <p></p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="three" class="box">
+        <div class="back">
+            <div class="wrap">
+                <nav>
+                    <a href=""><span>WORK 1</span> WEBSITE</a>
+                    <h2>CREATING WEBSITE</h2>
+                </nav>
+                <div class="wrap2 threeslide" data-aos="fade-up" data-aos-duration="2000">
+                    <article class="copy">
+                        <ul>
+                            <li>SAMSUNG1</li>
+                            <li>< 포트폴리용 카피사이트 제작 ></li>
+                            <li>
+                                <span>| 페이지 |</span> mainpage<br>
+                                <span>| 기여도 |</span> 1인 · 100%<br>
+                                <span>| 사용 도구 |</span> Photoshop · visual studio code
+                            </li>
+                            <li><a href="https://miye11.github.io/samsung1/" class="siteview">상세페이지 보러가기</a></li>
+                        </ul>
+                        <a href="" class="site site1"></a>
+                    </article>
+                    <article class="copy">
+                        <ul>
+                            <li>SAMSUNG2</li>
+                            <li>< 포트폴리용 사이트 리뉴얼 제작 ></li>
+                            <li>
+                                <span>| 페이지 |</span> mainpage<br>
+                                <span>| 기여도 |</span> 1인 · 100%<br>
+                                <span>| 사용 도구 |</span> Photoshop · visual studio code
+                            </li>
+                            <li><a href="https://miye11.github.io/samsung2/" class="siteview">상세페이지 보러가기</a></li>
+                        </ul>
+                        <a href="" class="site site2"></a>
+                    </article>
+                    <article class="copy">
+                        <ul>
+                            <li>한국알콜산업 KAI</li>
+                            <li>< 포트폴리용 카피사이트 제작 ></li>
+                            <li>
+                                <span>| 페이지 |</span> mainpage<br>
+                                <span>| 기여도 |</span> 1인 · 100%<br>
+                                <span>| 사용 도구 |</span> Photoshop · visual studio code
+                            </li>
+                            <li><a href="https://miye11.github.io/kai/" class="siteview">상세페이지 보러가기</a></li>
+                        </ul>
+                        <a href="" class="site site3"></a>
+                    </article>
+                    <article class="copy">
+                        <ul>
+                            <li>공차 GONGGHA</li>
+                            <li>< 포트폴리용 카피사이트 제작 ></li>
+                            <li>
+                                <span>| 페이지 |</span> mainpage<br>
+                                <span>| 기여도 |</span> 1인 · 100%<br>
+                                <span>| 사용 도구 |</span> illustration · visual studio code · scss
+                            </li>
+                            <li><a href="https://miye11.github.io/gongcha/" class="siteview">상세페이지 보러가기</a></li>
+                        </ul>
+                        <a href="" class="site site4"></a>
+                    </article>
+                    <article class="copy">
+                        <ul>
+                            <li>CGV</li>
+                            <li>< 포트폴리용 카피사이트 제작 ></li>
+                            <li>
+                                <span>| 페이지 |</span> mainpage<br>
+                                <span>| 기여도 |</span> 1인 · 100%<br>
+                                <span>| 사용 도구 |</span> illustration · visual studio code · scss
+                            </li>
+                            <li><a href="https://miye11.github.io/cgv/" class="siteview">상세페이지 보러가기</a></li>
+                        </ul>
+                        <a href="" class="site site5"></a>
+                    </article>
+                    <article class="copy">
+                        <ul>
+                            <li>ARTBOX</li>
+                            <li>< 포트폴리용 카피사이트 제작 ></li>
+                            <li>
+                                <span>| 페이지 |</span> mainpage<br>
+                                <span>| 기여도 |</span> 1인 · 100%<br>
+                                <span>| 사용 도구 |</span> illustration · visual studio code · scss
+                            </li>
+                            <li><a href="https://miye11.github.io/artbox/" class="siteview">상세페이지 보러가기</a></li>
+                        </ul>
+                        <a href="" class="site site6"></a>
+                    </article>
+                    <article class="copy">
+                        <ul>
+                            <li>JQUERY</li>
+                            <li>< 포트폴리용 웹사이트 제작 ></li>
+                            <li>
+                                <span>| 페이지 |</span> mainpage<br>
+                                <span>| 기여도 |</span> 1인 · 100%<br>
+                                <span>| 사용 도구 |</span>visual studio code · scss
+                            </li>
+                            <li><a href="https://parkmiye.github.io/jquery/" class="siteview">상세페이지 보러가기</a></li>
+                        </ul>
+                        <a href="" class="site site7"></a>
+                    </article>
+                    <article class="copy">
+                        <ul>
+                            <li>SUBWAY</li>
+                            <li>< 포트폴리용 카피사이트 제작 ></li>
+                            <li>
+                                <span>| 페이지 |</span> mainpage<br>
+                                <span>| 기여도 |</span> 1인 · 100%<br>
+                                <span>| 사용 도구 |</span> illustration · visual studio code · scss
+                            </li>
+                            <li><a href="https://miye11.github.io/subway/" class="siteview">상세페이지 보러가기</a></li>
+                        </ul>
+                        <a href="" class="site site8"></a>
+                    </article>
+                    <article class="copy">
+                        <ul>
+                            <li>HITEJINRO</li>
+                            <li>< 포트폴리용 카피사이트 제작 ></li>
+                            <li>
+                                <span>| 페이지 |</span> mainpage<br>
+                                <span>| 기여도 |</span> 1인 · 100%<br>
+                                <span>| 사용 도구 |</span> Photoshop · visual studio code · scss
+                            </li>
+                            <li><a href="https://miye11.github.io/hite/" class="siteview">상세페이지 보러가기</a></li>
+                        </ul>
+                        <a href="" class="site site9"></a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="four" class="box">
+        <div class="back"></div>
+        <div class="wrap">
+            <div class="wrap2">
+                <div class="left" data-aos="fade-up" data-aos-duration="2000">
+                    <a href=""><span>WORK 2</span> ILLUSTRATION</a>
+                    <h3>CREATING POSTER</h3>
+                    <p>디자인을 처음 접했을 당시,<br>좋아하고 관심있는 것들로 저만의 포스터들을 만들어 보았어요 :)<br>서툴지만 그만큼 노력이 깃들은 제작물들이기에<br>더욱 소중한 작품들입니다.<br>이러한 경험들을 바탕으로 하여 더 많고 폭 넓은<br>저만의 디자인을 연구하려고 노력중입니다 !</p>
+                </div>
+                <div class="right">
+                    <article class="in">
+                        <a href=""></a>
+                        <h4><span>인포그래픽</span> poster</h4>
+                        <p>분리수거와 분리배출의 차이점을 알려주는<br>포스터를 제작하였습니다.<br></p>
+                    </article>
+                    <article class="go">
+                        <a href=""></a>
+                        <h4><span>굿즈</span> poster</h4>
+                        <p>저의 최애 음식!인 치즈를 사용해 굿즈들을 만들어<br>포스터를 제작하였습니다.<br></p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section id="five" class="box">
+        <div class="back"></div>
+        <div class="wrap">
+            <div class="wrap2">
+                <div class="left" data-aos="fade-up" data-aos-duration="2000">
+                    <a href=""><span>WORK 3</span> INDESIGN</a>
+                    <h3>CREATING CALENDER</h3>
+                    <p>대학시절 달력이나 베너 티셔츠 등등,<br>많은 제작물들을 직접 디자인하여 만들어보고<br>실사제작까지 해보는 경험을 해보았어요 :)<br>그중에서도 제가 가장 애정하는 디즈니 달력입니다.<br>일러스트레이션을 활용해 캐릭터를 제작하고<br>인디자인을 활용해 레이아웃을 마무리 하였습니다.<br>공주들을 상징하는 오브젯들도 추가하여<br>배경을 더 꽉 채우도록 하였습니다.<br>이렇게 저만의 스타일을 찾아가려 많은 경험을 해보았습니다!</p>
+                </div>
+                <div class="right">
+                    <article>
+                        <div class="month">
+                            <ul class="cal fivefade">
+                                <li>
+                                    <figure>
+                                        <img src="img/ca1.png" alt="사진">
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="img/ca2.png" alt="사진">
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="img/ca3.png" alt="사진">
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="img/ca4.png" alt="사진">
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="img/ca5.png" alt="사진">
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="img/ca6.png" alt="사진">
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="img/ca7.png" alt="사진">
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="img/ca8.png" alt="사진">
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="img/ca9.png" alt="사진">
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="img/ca10.png" alt="사진">
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="img/ca11.png" alt="사진">
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <img src="img/ca12.png" alt="사진">
+                                    </figure>
+                                </li>
+                            </ul>
+                        </div>
+                        <h4><span>디즈니 PRINCESS</span><br>CALENDER</h4>
+                        <p>디즈니에 나오는 공주들을 일러스트화하여<br>캘린더를 제작하였습니다.<br></p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section> 
+</main>
+<!-- 하단 -->
+<footer class="box">
+    <div id="end">
+        <p><a href="#top" class="btop">go to the top</a></p>
+        <a href="" class="click">☆click this☆</a>
+        <div class="wrap" data-aos="flip-right" data-aos-duration="2000">
+            <h3 class="h3">Any more questions?</h3>
+            <ul class="mail flex">
+                <li>mysg0609@naver.com</li>
+                <li><a href="mailto:mysg0609@naver.com">메일 보내기</a></li>
+                <li>저의 포트폴리오를 보러와주셔서 감사해요 :)<br>저와 더 나누고 싶은 이야기들을 메일을 통해 연락주세요!</li>
+            </ul>
+        </div>
+        <div class="wrap2">
+            <p>★ 본 페이지는 상업적 목적이 아닌 개인 포트폴리오 용으로 제작되었습니다. ★</p>
+            <p>★ MADE BY MIMI ★</p>
+        </div>
+    </div>
+</footer>
+</body>

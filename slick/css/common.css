@@ -1,0 +1,39 @@
+/* 공통클래스 스타일 */
+.wrap{
+    width: 1600px;
+    margin: 0 auto;
+  }
+  .flex{
+    display: flex;
+  }
+  .flex-center{
+    justify-content: center;
+  }
+  .flex-between{
+    justify-content: space-between;
+  }
+  .flex-align-center{
+    align-items: center;
+  }
+  .flex-column{
+    flex-direction: column;
+  }
+  .text-center{
+    text-align: center;
+  }
+  .hide{
+    display: none; /* 안보이게 */
+    letter-spacing: 19px;
+  }
+  @font-face {
+    font-family: 'OKDDUNG';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/OKDDUNG.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+      font-family: 'KOTRA_GOTHIC';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/KOTRA_GOTHIC.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
